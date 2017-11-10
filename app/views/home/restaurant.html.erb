@@ -1,0 +1,22 @@
+<%= stylesheet_link_tag "restaurant.css" %>
+
+<table>
+    <tr>
+        <th>이미지</th>
+        <th>식당이름</th>
+        <th>분류</th>
+        <th>전화번호</th>
+        <th>주소</th>
+    </tr>
+        <% @rows.each do |l| %>
+    <tr>
+        <td><%= l['img'] %></td>
+        <td><%= l['업소명'] %></td>
+        <td><%= l['업태명'] %></td>
+        <td><%= l['소재지전화'] %></td>
+        <td><%= l['소재지_지번_'] %></td>
+    </tr>
+    
+   
+  <% end %>
+</table>

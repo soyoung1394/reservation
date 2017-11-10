@@ -1,0 +1,12 @@
+.food{
+  width:90%;
+  height:400px;
+  margin:20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.reservation{
+display: flex;
+justify-content:center;}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workspace</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag "restaurant.css" %>
+
+</head>
+<body>
+  <div class="container">
+  <div id="top">
+        <h1 id="logo"><img src="img/yo.png" alt="logo" width="200px"/></h1>
+        <ul class="topul">
+          <li><a href="login.html">LOGIN</a></li>
+          <li><a href="login.html">회원가입</a></li>
+          <li><a href="mypage.html">예약관리</a></li>
+        </ul>
+  </div>
+
+
+  <nav id="topMenu" a href=#>
+    <ul class="menu">
+      <li><a href=/ >HOME</a></li>
+      <li><a href=about.html >ABOUT</a></li>
+      <li><a href=reservation.html>RESERVATION</a></li>
+      <li><a href=home/restaurant>ALL</a></li>
+    </ul>
+  </nav>
+<%= yield %>
+</div>
+</body>
+</html>
